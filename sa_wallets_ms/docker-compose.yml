@@ -1,0 +1,10 @@
+wallets-db:
+  build: ./db-server
+  ports:
+    - "3309:3306"
+wallets-ms:
+  build: .
+  ports:
+    - "4040:4040"
+  links:
+    - wallets-db
