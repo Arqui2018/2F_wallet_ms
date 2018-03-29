@@ -20,10 +20,10 @@ public class WalletResource {
     @EJB
     WalletService walletService;
 
-    @GET
-    public List<Wallet> getAllWallets(@QueryParam("first") int first, @QueryParam("maxResult") int maxResult) {
-        return walletService.getAllWallets(first, maxResult);
-    }
+    // @GET
+    // public List<Wallet> getAllWallets(@QueryParam("first") int first, @QueryParam("maxResult") int maxResult) {
+    //     return walletService.getAllWallets(first, maxResult);
+    // }
 
     @GET
     @Path("{id}")
@@ -44,11 +44,11 @@ public class WalletResource {
         return Response.status(Response.Status.NO_CONTENT).build();
     }
 
-    @DELETE
-    @Path("{id}")
-    public Response deleteWallet(@PathParam("id") long id) {
-        walletService.deleteWallet(id);
-        return Response.status(Response.Status.OK).build();
-    }
+    // @DELETE
+    // @Path("{id}")
+    // public Response deleteWallet(@PathParam("id") long id) {
+    //     walletService.deleteWallet(id);
+    //     return Response.status(Response.Status.OK).build();
+    // }
 
 }

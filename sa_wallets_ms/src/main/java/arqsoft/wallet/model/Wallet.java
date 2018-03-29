@@ -26,6 +26,6 @@ public class Wallet {
       return balance;
     }
     public void setBalance(Long balance){
-      this.balance = balance;
+      this.balance += balance;
     }
 }

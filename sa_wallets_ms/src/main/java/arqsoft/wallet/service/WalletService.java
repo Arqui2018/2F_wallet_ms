@@ -14,10 +14,10 @@ public class WalletService {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<Wallet> getAllWallets(int first, int maxResult) {
-        return entityManager.createNamedQuery(Wallet.FIND_ALL)
-                .setFirstResult(first).setMaxResults(maxResult).getResultList();
-    }
+    // public List<Wallet> getAllWallets(int first, int maxResult) {
+    //     return entityManager.createNamedQuery(Wallet.FIND_ALL)
+    //             .setFirstResult(first).setMaxResults(maxResult).getResultList();
+    // }
 
     public Wallet getWalletById(long id){
         return entityManager.find(Wallet.class, id);
@@ -33,8 +33,8 @@ public class WalletService {
         return entityManager.merge(walletToUpdate);
     }
 
-    public void deleteWallet(long id) {
-        Wallet wallet = entityManager.find(Wallet.class, id);
-        entityManager.remove(wallet);
-    }
+    // public void deleteWallet(long id) {
+    //     Wallet wallet = entityManager.find(Wallet.class, id);
+    //     entityManager.remove(wallet);
+    // }
 }
