@@ -29,4 +29,7 @@ public class Wallet {
     public void setBalance(Long balance) {
         this.balance = balance;
     }
+    public void setBalance2(Long balance) {
+        this.balance = this.balance + balance;
+    }
 }

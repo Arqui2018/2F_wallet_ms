@@ -1,4 +1,4 @@
 arqsoft/wallet/model/Wallet.class
-arqsoft/course/JAXRSConfiguration.class
 arqsoft/wallet/resource/WalletResource.class
+arqsoft/course/JAXRSConfiguration.class
 arqsoft/wallet/service/WalletService.class

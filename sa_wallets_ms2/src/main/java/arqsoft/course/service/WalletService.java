@@ -29,7 +29,7 @@ public class WalletService {
 
     public Wallet updateWallet(long id, Wallet wallet) {
         Wallet walletToUpdate = entityManager.find(Wallet.class, id);
-        walletToUpdate.setBalance(wallet.getBalance());
+        walletToUpdate.setBalance2(wallet.getBalance());
         return entityManager.merge(walletToUpdate);
     }
 
