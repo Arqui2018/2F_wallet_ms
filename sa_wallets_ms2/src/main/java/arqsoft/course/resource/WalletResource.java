@@ -39,9 +39,9 @@ public class WalletResource {
 
     @PUT
     @Path("{id}")
-    public Response updateWallet(@PathParam("id") long id, Wallet wallet) {
+    public Wallet updateWallet(@PathParam("id") long id, Wallet wallet) {
         walletService.updateWallet(id, wallet);
-        return Response.status(Response.Status.NO_CONTENT).build();
+        return walletService.getWalletById(id);
     }
 
     @DELETE
