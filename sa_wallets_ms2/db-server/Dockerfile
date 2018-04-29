@@ -1,4 +1,4 @@
-From mysql
+From mysql:5.7.22
 
 ENV MYSQL_ROOT_PASSWORD 123
 ENV MYSQL_DATABASE wallets
