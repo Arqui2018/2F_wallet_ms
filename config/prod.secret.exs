@@ -17,12 +17,5 @@ config :wallet_ms, WalletMs.Repo,
   username: "apuesta",
   password: "1234",
   database: "wallet",
-  hostname: "wallet_db",
+  hostname: "wallet-db",
   pool_size: 15
-# config :wallet_ms, WalletMs.Repo,
-#   adapter: Ecto.Adapters.MySQL,
-#   username: "apuesta",
-#   password: "1234",
-#   database: "wallet",
-#   hostname: "wallet_db",
-#   pool_size: 10
